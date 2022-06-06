@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title></title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header-top">
+            <div class="header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html"><img src="data:image/png;base64,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" style="height: 100px;width: 100px;" /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                           <div class="limit-box">
+                              <nav class="main-menu">
+                                 <ul class="menu-area-main">
+                                    <li class="active"> <a href="index.html">Home</a> </li>
+                                    <li> <a href="#jewellery">jewellery</a> </li>
+                                    <li> <a href="#contact">Contact</a> </li>
+                                    <li> <a href="#clients">Our Clients</a> </li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <section class="slider_section">
+               <div class="banner_main">
+                  <div class="container">
+                     <div class="row d_flex">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
+                           <div class="text-bg">
+                              <h1>for your Beauty</h1>
+                              <span>SAFA Jewellery is one of Kerala’s most trusted jewelleRY <br> 
+                              <strong class="land_bold">we offer you</strong></span>
+                              <a href="#">shop now</a>
+                           </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                           <div class="text-img">
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         
+         </section>
+         
+         </div>
+      </header>
+      <!-- Best  -->
+      <div id="jewellery" class="Best">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>who we are</h2>
+                     <p> SAFA Jewellery is one of Kerala’s most trusted jewellers reputed for the remarkable purity and quality of its products & services. Safa Jewellery group is well-known for their unmatched design offering of a myriad of styles from the Middle East and the Far East, to traditional handcrafted styles from around India. Our style is relentlessly modern, yet intensely respectful of traditions. Every piece of jewellery is meticulously crafted with utmost care ensuring highest quality standard</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="best_main">
+                     <div class="row d_flex">
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                           <div class="best_text">
+                              <h2> services offered</h2>
+                              <p>Safa Jewellery provides the exquisite craftsmanship of beautiful jewellery designs. Discover its fine collection on the official Safa Jewellery website. We create unique jewellery using the finest materials and hand-picked gemstones. We stand for accessible luxury and versatility. Feel the craft of perfection and celebrate golden memories.  </p>
+                              <a href="#">read More</a>
+                           </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                           <div class="best_img">
+                              <h4>Best Design Of necklace</h4>
+                              <figure><img src="https://www.thangamjewel.com/images/fb4c2317984563.562c1d6b1b08b.jpg"></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="best_main">
+                     <div class="row d_flex">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                           <div class="best_img croos_rt">
+                              <h4>Best Design Of bangles</h4>
+                              <figure><img src="data:image/jpeg;base64,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"></figure>
+                           </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                           <div class="best_text flot_left">
+                              <h2> our stores</h2>
+                              <p> Our showrooms have earned a reputation for being amongst the finest jewellery destinations in Kerala. Safa Jewellery boasts seven state-of-the-art, ultra-modern showrooms across Malappuram and Palakkad districts in Kerala, in Melattur, Karinkallathani, Karuvarakundu, Alanallur ,Pandikkad, Wandoor, Pattikkad and Malappuram. SAFA has a remarkable presence in GCC countries with showrooms in Jeddah, Saudi Arabia a State-of-the-art manufacturing unit in Sharjah and wholesale in Dubai, UAE</p>
+                              <a href="#">read More</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="best_main pa_bot">
+                     <div class="row d_flex">
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                           <div class="best_text">
+                              <h2> our esteemed branches</h2>
+                              <p>A reader will be distracted by the readable content of a page when looking at its layout. The point of using LoremIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+                              <a href="#">read More</a>
+                           </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                           <div class="best_img d_none">
+                              <h4>Best Design Of earrings</h4>
+                              <figure><img src="https://i.pinimg.com/736x/b0/5c/ad/b05cadf59fef67a12c2f41d88428b756.jpg"></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end Best -->
+      <!-- contact -->
+      <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Request a  call back</h2>
+                     <p> A reader will be distracted by the readable content of a page when looking at its layout. The point of using LoremIt is a long established fact that a reader will be distracted by the readable content </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                  <div class="contact">
+                     <form>
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <input class="contactus" placeholder="Name" type="text" name="Name">
+                           </div>
+                           <div class="col-sm-12">
+                              <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number">
+                           </div>
+                           <div class="col-sm-12">
+                              <input class="contactus" placeholder="Email" type="text" name="Email">
+                           </div>
+                           <div class="col-sm-12">
+                              <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                           </div>
+                           <div class="col-sm-12">
+                              <button class="send">Send</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                  <div class="rable-box">
+                     <figure>
+                     <img src="https://i.pinimg.com/originals/4e/af/62/4eaf624b7205784091b9f27f3c8bc8b2.jpg" alt="#" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      <!-- clients -->
+      <div id="clients" class="clients ">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Our Clients</h2>
+                     <p> A reader will be distracted by the readable content of a page when looking at its layout. The point of using LoremIt is a </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row d_flex">
+               <div class="col-md-10 offset-col-md-1">
+                  <div id="myCarousel" class="carousel slide clients_slider" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row d_flex">
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 pa_rile">
+                                       <div class="img_box">
+                                          <i><img src="images/icon_1.png" alt="#"/></i>
+                                          <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVqADlKC6UYGez-oOx8o6EfkWJZBKBNvi1lg&usqp=CAU" alt="#"/></figure>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 pa_rile">
+                                       <div class="joe">
+                                          <h3>raheena</h3>
+                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row d_flex">
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 pa_rile">
+                                       <div class="img_box">
+                                          <i><img src="images/icon_1.png" alt="#"/></i>
+                                          <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSHr-KmmMmmHCTVqcGJ-ArA5eKHWN2isGZRw&usqp=CAU" alt="#"/></figure>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 pa_rile">
+                                       <div class="joe">
+                                          <h3>nishana</h3>
+                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row d_flex">
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 pa_rile">
+                                       <div class="img_box">
+                                          <i><img src="images/icon_1.png" alt="#"/></i>
+                                          <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDp8-9ik2zymjcCCAk7pDltsA53Sgb-7lbZg&usqp=CAU" alt="#"/></figure>
+                                       </div>
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 pa_rile">
+                                       <div class="joe">
+                                          <h3>safna</h3>
+                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end clients -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="call_now2">
+                        <h3>Free Multipurpose Responsive </h3>
+                        <span>Landing Page 2022</span>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="call_now">
+                        <h3>Call Now</h3>
+                        <span>9605257502</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <p>© 2022 All Rights Reserved. <a href="https://html.design/">raheena safna</a></p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    
+   </body>
+</html>
